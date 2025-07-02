@@ -1,7 +1,7 @@
 function RestaurantsPage() {
     return (
         <div>
-            <h1>Restaurants Page</h1>
+            <h2>Restaurants Page</h2>
         </div>
     );
 }
