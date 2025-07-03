@@ -8,13 +8,11 @@ function RootLayout({children}) {
                     <ul>
                         <li><Link href="/">Главная</Link></li>
                         <li><Link href="/restaurants">Рестораны</Link></li>
-                        <li><Link href="/restaurants/menu">Меню</Link></li>
-                        <li><Link href="/">Контакты</Link></li>
                     </ul>
                 </header>
                 <div>{children}</div>
                 <footer>Footer</footer>
-                </body>
+            </body>
         </html>
     );
 }
