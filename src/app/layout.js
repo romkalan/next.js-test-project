@@ -1,4 +1,5 @@
 import Link from "next/link";
+import StoreProvider from "@/redux/store-provider";
 
 function RootLayout({children}) {
     return (
@@ -10,7 +11,7 @@ function RootLayout({children}) {
                         <li><Link href="/restaurants">Рестораны</Link></li>
                     </ul>
                 </header>
-                <div>{children}</div>
+                <div><StoreProvider>{children}</StoreProvider></div>
                 <footer>Footer</footer>
             </body>
         </html>

@@ -2,7 +2,7 @@ import {getRestaurants} from "@/services/api";
 import Tabs from "@/components/tabs/component";
 
 async function RestaurantsPage() {
-    // const restaurants = await getRestaurants();
+    const restaurants = await getRestaurants();
 
     const products = [
         {name: "Van Clif", id: 123124213423},
@@ -12,7 +12,7 @@ async function RestaurantsPage() {
     return (
         <div>
             <h2>Select Restaurants</h2>
-            <Tabs restaurants={products} />
+            <Tabs restaurants={restaurants} />
         </div>
     );
 }
